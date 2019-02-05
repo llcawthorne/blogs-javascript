@@ -47,5 +47,44 @@ mutation {
 }
 ```
 
-I don't really know how to do anything else (like queries and such), so I need
-to do some reading on GraphQL.
+To list all recipes, try:
+
+```
+{
+  allRecipes {
+    id,
+    title,
+    ingredients,
+    directions
+  }
+}
+```
+
+This will query your one user:
+
+```
+{
+  user(id: 1) {
+    id,
+    name
+  }
+}
+```
+
+And when I tried this, somehow my recipe 1 got null as user, so I was getting
+"Cannot return null for non-nullable field Recipe.user".  My recipe 2 was fine,
+so I was able to fetch it like this:
+
+```
+{
+  recipe(id: 2) {
+    title,
+    ingredients,
+    directions,
+    user {
+      name,
+      email
+    }
+  }
+}
+```
