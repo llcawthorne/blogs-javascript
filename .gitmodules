@@ -4,3 +4,6 @@
 [submodule "mostly-adequate-guide"]
 	path = mostly-adequate-guide
 	url = https://github.com/MostlyAdequate/mostly-adequate-guide.git
+[submodule "modern-js-cheatsheet"]
+	path = modern-js-cheatsheet
+	url = https://github.com/mbeaudru/modern-js-cheatsheet.git
