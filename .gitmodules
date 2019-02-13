@@ -1,0 +1,6 @@
+[submodule "javascript-algorithms"]
+	path = javascript-algorithms
+	url = https://github.com/trekhleb/javascript-algorithms.git
+[submodule "mostly-adequate-guide"]
+	path = mostly-adequate-guide
+	url = https://github.com/MostlyAdequate/mostly-adequate-guide.git
